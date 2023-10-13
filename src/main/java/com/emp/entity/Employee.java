@@ -15,12 +15,15 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull
+	@NotNull()
 	@Size(min=4, message = "Your name must be 4 character")
 	private String name;
 	
 	@NotBlank(message = "your address should not blank")
-	private String Address;
+	private String address;
+	
+	@Size(min = 10, max = 10, message = "Your number should be 10 digits")
+	private String mob;
 	
 	
 	public Long getId() {
@@ -36,23 +39,30 @@ public class Employee {
 		this.name = name;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
-	public Employee(Long id, String name, String address) {
+	
+	public String getMob() {
+		return mob;
+	}
+	public void setMob(String mob) {
+		this.mob = mob;
+	}
+	
+	
+	public Employee(Long id, String name, String address, String mob) {
 		super();
 		this.id = id;
 		this.name = name;
-		Address = address;
+		this.address = address;
+		this.mob = mob;
 	}
 	public Employee() {
 		super();
 	}
-	
-	
-	
 	
 	
 }

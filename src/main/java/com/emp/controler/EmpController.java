@@ -3,7 +3,6 @@ package com.emp.controler;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,6 +32,7 @@ public class EmpController {
 		e.setId(6l);
 		e.setName("Praveen");
 		e.setAddress("Noida");
+		e.setMob("9795296423");
 		return e;
 	}
 	
@@ -47,7 +47,7 @@ public class EmpController {
 	}
 	
 	@PutMapping("/Update/{id}")
-	public Employee updateEmp(@Valid @PathVariable Long id, @RequestBody Employee em) {
+	public Employee updateEmp(@PathVariable Long id,@Valid @RequestBody Employee em) {
 		em.setId(id);
 		return empService.updateEmployee(em);
 	}
@@ -57,4 +57,6 @@ public class EmpController {
 		empService.deleteData(id);
 		System.out.println("Data Deleted");
 	}
+	
+	
 }

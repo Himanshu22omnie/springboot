@@ -19,8 +19,9 @@ public class EmpService {
 	EmpDao empDao;
 	
 	public String saveEmp(Employee e) {
-		e.setName("Ritik");
+		e.setName("Yash");
 		e.setAddress("Bomby");
+		e.setMob("9795296423");
 		empDao.save(e);
 		return "Data Saved Successfully";
 	}
