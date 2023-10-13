@@ -9,6 +9,7 @@ public class BaseResponse<T> {
 	String status;
 	Map<String, String> respMap;
 	
+	
 	public String getMessage() {
 		return message;
 	}

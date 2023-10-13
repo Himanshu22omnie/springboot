@@ -33,6 +33,10 @@ public class EmpController {
 		e.setName("Praveen");
 		e.setAddress("Noida");
 		e.setMob("9795296423");
+		
+//		if (e.getMob().Ex) {
+//			throw new RuntimeException();
+//		}
 		return e;
 	}
 	

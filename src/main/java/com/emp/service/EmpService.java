@@ -22,7 +22,12 @@ public class EmpService {
 		e.setName("Yash");
 		e.setAddress("Bomby");
 		e.setMob("9795296423");
+		
 		empDao.save(e);
+		
+//		if (e.getMob()=="aeiou") {
+//			throw new ;
+//		}
 		return "Data Saved Successfully";
 	}
 	
@@ -31,8 +36,6 @@ public class EmpService {
 		return empDao.findAll();
 	}
 	
-	
-	
 	public Employee fetchUsingId(long id) {
 		return empDao.findById(id);
 	}
@@ -40,7 +43,6 @@ public class EmpService {
 	//Update
 	public Employee updateEmployee(Employee emp) {
 		return empDao.save(emp);
-		
 	}
 	
 	//delete

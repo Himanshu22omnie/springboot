@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 
@@ -23,6 +24,7 @@ public class Employee {
 	private String address;
 	
 	@Size(min = 10, max = 10, message = "Your number should be 10 digits")
+	//@Pattern(regexp = "^(\\+?\\d{1,4}[\\s-])?(?!0+\\s+,?$)\\d{10}\\s*,?$\r\n"+ "", message = "Your Number should not follow the Number property")
 	private String mob;
 	
 	
