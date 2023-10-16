@@ -19,10 +19,10 @@ public class EmpService {
 	EmpDao empDao;
 	
 	public String saveEmp(Employee e) {
-		e.setName("Yash");
-		e.setAddress("Bomby");
-		e.setMob("9795296423");
-		
+		e.setName("Sakshi");
+		e.setAddress("Noida");
+		e.setMob("9795299428");
+		e.setEmail("yash@gmail.com");
 		empDao.save(e);
 		
 //		if (e.getMob()=="aeiou") {
