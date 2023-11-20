@@ -1,2 +1,3 @@
-Himanshu Sharma
-Omnie Solutions
+Name - Himanshu Sharma
+Company - Omnie Solutions
+Technology - Java
