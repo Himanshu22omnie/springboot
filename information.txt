@@ -1,5 +1,6 @@
 Name - Himanshu Sharma
 Company - Omnie Solutions
 Technology - Java
+Education - B.Tech
 
 This is Develop Branch
